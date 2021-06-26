@@ -69,5 +69,7 @@ function main() {
     strBody = "データを取得できません。ご確認ください。";
   }
 
-  post(strBody);
+  if (workday(new Date())) {
+    post(strBody);
+  }
 }
